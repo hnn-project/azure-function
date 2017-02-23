@@ -28,7 +28,6 @@ function insertTableRow(partitionKey, rowKey, data) {
             dueDate: entGen.DateTime(new Date(Date.UTC(2015, 11, 17))),
         };
 
-        // insert 작업 수행
         tableService.insertEntity(BLOB_TABLE_NAME, task, function (err, result, response) {
             if (err) {
                 reject(err);
