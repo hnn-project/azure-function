@@ -1,4 +1,4 @@
-# HNN Porject azure-function
+# HNN Project azure-function
 HNN Project - Azure Functions workflow scheduler repo
 
 ##Azure Function workflow
