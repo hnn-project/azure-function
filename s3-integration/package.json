@@ -1,0 +1,8 @@
+{
+  "name": "s3-integration",
+  "license": "MIT",
+  "dependencies": {
+    "aws-sdk": "^2.18.0",
+    "azure-storage": "^2.0.0"
+  }
+}
