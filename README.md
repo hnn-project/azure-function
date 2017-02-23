@@ -90,7 +90,28 @@ Kudu console에서 aws-sdk package 등이 잘 구성되는 것을 확인
 S3로부터 파일을 받은 이후 해당 파일을 Azure의 Blob에 업로드 하는 과정 필요  
 
 ```
-//코드 예제 추가
+
+// Upload files (which starts with 'test/') in S3 to azure storage
+listAwsS3Objects(S3_BUCKET_NAME, 'test/').then((list) => {
+    let promise = Promise.resolve();
+
+    list.forEach((item) => {
+        console.log(`Upload ${item.Key}`);
+
+        promise = promise.then(() => {
+            return getAwsS3Object(S3_BUCKET_NAME, item.Key).then((data) => {
+                const rs = new stream.PassThrough();
+                const ws = createAzureBlobWriteStream(AZURE_CONTAINER_NAME, item.Key);
+                rs.end(data.Body);
+                rs.pipe(ws);
+            });
+        });
+    });
+
+    return promise;
+}).then(() => {
+    console.log('Completed');
+});
 
 ```
 
