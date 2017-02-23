@@ -10,7 +10,7 @@ $ npm install
 ## Configuration
 
 1. Set your aws access configuration to `aws-config.json` file.
-1. Set you AWS S3 and Azure storage options in source files.
+1. Set your AWS S3 and Azure storage options in source files.
 
 ## Run example
 
