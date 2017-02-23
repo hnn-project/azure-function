@@ -3,9 +3,9 @@ const azure = require('azure-storage');
 const _ = require('underscore');
 const readline = require('readline');
 
-const AZURE_BLOB_NAME = 'function70f82f36b47b';
-const AZURE_BLOB_ACCESS_KEY = 'edU0JpuTz3lxXF5o+cIupnp56OJW2Iaewr6QwuorPaummVCneH9gU+9ggGP0H4TbIIhyz7Wg9TkCyIjmOWI7pw==';
-const AZURE_CONTAINER_NAME = 'hackfest-hdinsight-2017-02-23t05-02-21-407z';
+const AZURE_BLOB_NAME = '<Your blob Name>';
+const AZURE_BLOB_ACCESS_KEY = '<Your blob access key>';
+const AZURE_CONTAINER_NAME = '<Your container name>';
 
 const DB_HOST = '<Your DB host>';
 const DB_USERNAME = '<Your DB username>';
