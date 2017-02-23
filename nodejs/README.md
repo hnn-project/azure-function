@@ -20,4 +20,7 @@ $ node s3-to-azure-storage.js
 
 # Azure Storge to Database (MySQL)
 $ node azure-storage-to-mysql.js
+
+# Cognitive API to Azure NoSQL Table
+$ node cognitive-api-to-table.js
 ```
