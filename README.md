@@ -78,7 +78,7 @@ package.json file
 
 [Azure Functions - Node Version & Package Management](https://docs.microsoft.com/en-us/azure/azure-functions/functions-reference-node#node-version--package-management)  
  
-##S3 to Azure Storage Blob integration code - node.js
+## S3 to Azure Storage Blob integration code - node.js
 [S3 to Azure Storage Blob integration code - node.js code location](https://github.com/hnn-project/azure-function/tree/master/nodejs)
 
 ```
