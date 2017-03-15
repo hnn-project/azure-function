@@ -1,11 +1,11 @@
 # HNN Project azure-function
-HNN Project - Azure Functions workflow scheduler repo
-
-##Azure Functions benefit in HNN project
+HNN Project - Azure Functions workflow scheduler repo  
+ 
+## Azure Functions benefit in HNN project
 The activity log of the HNN project is loaded into S3 of AWS, every one-hour intervals. S3 logs need to be migrated to the Azure platform for one-hour intervals (or periodic) for analysis. Apply Azure function to Hackfest, which is the best option to trigger with server-less service and 1-hour timer.  
 Especially, since node.js, Python, C#, F#, PHP such like popular developer languages and shell commands are provided, the developer can implement the logic in code without restriction.  
-
-##Azure Function Webhook - node.js
+ 
+## Azure Function Webhook - node.js
 Using a timer in node.js. The timer trigger is executed with the following example code  
 
 ```
@@ -77,7 +77,7 @@ package.json file
 ```
 
 [Azure Functions - Node Version & Package Management](https://docs.microsoft.com/en-us/azure/azure-functions/functions-reference-node#node-version--package-management)  
-
+ 
 ##S3 to Azure Storage Blob integration code - node.js
 [S3 to Azure Storage Blob integration code - node.js code location](https://github.com/hnn-project/azure-function/tree/master/nodejs)
 
